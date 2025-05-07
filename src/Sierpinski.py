@@ -1,9 +1,5 @@
 from turtle import *
-
-width(1.5)
-color("gold")
-#fillcolor("gold")
-bgcolor("slategray")
+from imageGrab import capture_window
 
 def sierpinski(a, level):
     if level == 1:
@@ -19,16 +15,26 @@ def sierpinski(a, level):
             left(120)
 
 
+width(2)
+color("gold")
+#fillcolor("gold")
+bgcolor("slategray")
+
 speed(0)
 tracer(100)
 hideturtle()
 penup()
-goto(-400, 0)
+goto(-200, -100)
 pendown()
 
 begin_fill()
-sierpinski(400, 9)
+sierpinski(400, 7)
 end_fill()
 
 update()
-exitonclick()
+
+capture_window()
+
+
+done()
+

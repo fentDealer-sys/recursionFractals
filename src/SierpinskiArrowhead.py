@@ -26,5 +26,7 @@ pendown()
 arrowhead_curve(800, 7, 1)
 hideturtle()
 
+
+
 update()
 exitonclick()
